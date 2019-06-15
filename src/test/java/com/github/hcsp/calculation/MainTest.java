@@ -1,15 +1,14 @@
 package com.github.hcsp.calculation;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class MainTest {
+public class MainTest {
     @Test
     public void test() {
-        assertEquals("", Main.concatString("", ""));
-        assertEquals("a", Main.concatString("a", null));
-        assertEquals("ab", Main.concatString("a", "b"));
-        assertEquals("b", Main.concatString(null, "b"));
+        Assertions.assertEquals("", Main.concatString("", ""));
+        Assertions.assertEquals("a", Main.concatString("a", null));
+        Assertions.assertEquals("ab", Main.concatString("a", "b"));
+        Assertions.assertEquals("b", Main.concatString(null, "b"));
     }
 }
