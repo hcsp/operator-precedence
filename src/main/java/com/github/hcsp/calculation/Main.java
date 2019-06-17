@@ -2,16 +2,7 @@ package com.github.hcsp.calculation;
 
 public class Main {
     public static String concatString(String a, String b) {
-
-        if(a==null && b == null ){
-            return "";
-        }else if(a==null && b!=null){
-            return b;
-        }else if(a!=null && b==null){
-            return a;
-        }else{
-            return a+b;
-        }
+        return a == null ? "" : a + b == null ? "" : b;
     }
 
     public static void main(String[] args) {
