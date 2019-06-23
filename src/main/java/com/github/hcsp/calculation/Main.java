@@ -2,7 +2,9 @@ package com.github.hcsp.calculation;
 
 public class Main {
     public static String concatString(String a, String b) {
-        return a == null ? "" : a + b == null ? "" : b;
+        String _a = a == null ? "" : a;
+        String _b = b == null ? "" : b;
+        return _a + _b;
     }
 
     public static void main(String[] args) {
