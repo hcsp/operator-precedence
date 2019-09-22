@@ -10,13 +10,13 @@ public class Main {
 //            return b == null ? a : a + b;
 //        }
 
-        String ret="";
+        String ans = "";
         if(a != null)
-            ret += a;
+            ans += a;
         if(b != null){
-            ret += b;
+            ans += b;
         }
-        return ret;
+        return ans;
     }
 
     public static void main(String[] args) {
