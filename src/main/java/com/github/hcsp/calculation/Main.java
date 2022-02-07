@@ -4,7 +4,12 @@ public class Main {
     // 连接两个字符串，如果字符串为空指针null，则将其当作空字符串处理
     // 现在的实现有明显的bug，请修复之。
     public static String concatString(String a, String b) {
-        return a == null ? "" : a + b == null ? "" : b;
+
+        return getString(a) + getString(b);
+    }
+
+    private static String getString(String a) {
+        return a == null ? "" : a;
     }
 
     public static void main(String[] args) {
