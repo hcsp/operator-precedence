@@ -5,7 +5,7 @@ public class Main {
     // 现在的实现有明显的bug，请修复之。
     public static String concatString(String a, String b) {
 //        return (a == null && b != null)? (""+b) : (b == null && a != null) ? (a+"") : (a == null && b == null)? (""+"") : a+b;
-            return a == null ? (b == null ? "":b):(b == null ? a:a+b);
+            return a == null ? (b == null ? "" : b) : (b == null ? a : a + b);
     }
 
     public static void main(String[] args) {
